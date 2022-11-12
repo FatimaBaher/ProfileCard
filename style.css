@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --black: #373535;
+    --purple: #AB5FCF;
+    font-family: Poppins;
+}
+.card-container{
+    background-color: #242222;   
+    margin-inline: auto;   
+    padding: 10px;
+    border-radius: 20px;
+    height: max-content;
+    width: max-content;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 22px 23px -13px #D3D3D3;
+    position: relative;
+    padding-right: 20px;
+    transform: rotate(10deg);
+    transition: transform 2s;
+}
+.card-container:hover{
+    transform:  translateY(-30%) rotate(10deg);
+}
+.card-container:hover .profile-img{
+    transform: scale(1.05);
+}
+
+.profileIcon{
+    position: absolute;
+    transform: rotate(-17.52deg);
+    margin-left: 445px;
+    margin-top: -12px;
+    width: 180px;
+    height: 170px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.right-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+.profile-img{
+    border-radius: 50%;
+    border-color: var(--purple);
+    width: 234px;
+    height: 234px;
+    display: inline;
+    margin-bottom: 20px;
+    box-shadow: -2px 4px 6px 0 #151414 ;
+}
+.name{
+    color: white;
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: 29px;
+    text-align: center;
+    display: block;
+    margin-bottom: 17px;
+}
+.arrow{
+    width: 25px;
+    height: 25px;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vh;
+    overflow: hidden;
+}
+.title{
+    color:#9B9A9A;
+    font-size: 20px;
+}
+.value{
+    color:#FFF;
+    font-size: 24px;
+    display: block;
+}
+.viewBtn{
+    color:#242222;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: -2px 4px 6px 0 #1D1B1B;
+    height: 46.5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    box-shadow: -2px 4px 6px 0 #151414;
+}
+.title-pen{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+}
+.fa-pen{
+    opacity: 0;
+    transition: .3s;
+    color:#9B9A9A;
+}
+.info:hover .fa-pen{
+    opacity: 1;
+}
