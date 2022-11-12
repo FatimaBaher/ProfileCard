@@ -30,8 +30,8 @@
 .profileIcon{
     position: absolute;
     transform: rotate(-17.52deg);
-    margin-left: 445px;
-    margin-top: -12px;
+    top:-3px;
+    right:-8px;
     width: 180px;
     height: 170px;
 }
